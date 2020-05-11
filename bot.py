@@ -1,6 +1,6 @@
 import logging
 from aiogram import Bot, Dispatcher, executor, types, md
-from config import *
+from config import *  # create config.py file in the same directory to store sensitive data (e.g. API bot token)
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
