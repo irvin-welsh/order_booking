@@ -1,6 +1,6 @@
 import logging
 import telegram
-from telegram.ext import Updater, CommandHandler, Dispatcher
+from telegram.ext import Updater, CommandHandler, Dispatcher, Bot
 from config import *
 import os
 # # from aiogram import Bot, Dispatcher, executor, types, md
@@ -22,7 +22,7 @@ def find_file_ids():
     bot.sendPhoto(chat_id='276893349', photo="AQADaPn4Il0AAzT2AQAB", reply_to_message_id=msg)
     time.sleep(3)
 
-bot.start_pooling(bot)
+Bot.start_pooling(bot)
 # telegram.ext.Updater(bot, 4)
 
 
