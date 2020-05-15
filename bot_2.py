@@ -17,17 +17,12 @@ def start(update, context):
                  InlineKeyboardButton("Оставить заявку на продукт", callback_data='2')],
 
                 [InlineKeyboardButton("Связаться с магазином", callback_data='3')]]
-
     reply_markup = InlineKeyboardMarkup(keyboard)
-
     update.message.reply_text('Выберите пункт меню внизу экрана', reply_markup=reply_markup)
 
 
 def button(update, context):
     query = update.callback_query
-
-    # CallbackQueries need to be answered, even if no notification to the user is needed
-    # Some clients may have trouble otherwise. See https://core.telegram.org/bots/api#callbackquery
     query.answer()
 
     query.edit_message_text(text="Вы выбрали: {}".format(query.data))
