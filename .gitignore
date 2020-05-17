@@ -2,3 +2,4 @@ config.py
 __pycache__/
 specs.txt
 bot.py
+test.py
