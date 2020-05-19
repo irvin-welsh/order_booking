@@ -18,6 +18,7 @@ def start(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
 start_handler = CommandHandler('start', start)
 
+
 # caption for unhandled input
 def random_questions(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text='Я не понимаю вас. Используйте список моих комманд, для эффективного взаимодействия')
