@@ -14,6 +14,7 @@ crsr = connection.cursor()
 #     working_dates=[cc_rows]
 #     return working_dates
 
+
 # Warehouse is working according to 1/3 shift (1 workday and 3 days off), so order must be delivered only on working days which are calculated as x+4
 def get_working_days():
     current_date = date.today()
