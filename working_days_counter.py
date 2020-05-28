@@ -11,13 +11,6 @@ import sqlite3
 
 connection=sqlite3.connect("working_dates.db")
 crsr = connection.cursor()
-#
-# def getDataFromDB():
-#     for rows in crsr.execute('SELECT * FROM delivery_slots'):
-#         cc_rows=crsr.fetchall()
-#     working_dates=[cc_rows]
-#     return working_dates
-
 
 # Warehouse is working according to 1/3 shift (1 workday and 3 days off), so order must be delivered only on working days which are calculated as x+4
 def get_working_days():
