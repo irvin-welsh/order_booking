@@ -1,5 +1,5 @@
 # importing datetime module
-from datetime import *
+import datetime
 
 # Warehouse is working according to 1/3 shift (1 workday and 3 days off), so order must be delivered only on working days which are calculated as x+4
 def get_working_days():
