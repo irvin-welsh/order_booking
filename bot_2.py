@@ -27,7 +27,6 @@ def get_slots(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text=get_working_days())
 get_slots_handler=CommandHandler('slots', get_slots)
 
-
 # calling handlers (commands handlers must go FIRST)
 dp.add_handler(start_handler)
 dp.add_handler(get_slots_handler)
