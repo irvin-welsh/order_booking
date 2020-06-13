@@ -1,8 +1,5 @@
-from datetime import *
-
-# Warehouse is working according to 1/3 shift (1 workday and 3 days off), so order must be delivered only on working days which are calculated as x+4
-def get_working_days():
-    current_date = date.today()
+# importing necessary modules
+import datetime
 from dateutil.relativedelta import *
 from dateutil.rrule import *
 from dateutil.parser import *
